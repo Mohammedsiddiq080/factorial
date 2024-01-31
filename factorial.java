@@ -1,10 +1,12 @@
 package Edureka;
 import java.util.Scanner;
-public class Factorial {
-public static void main(String args[]){
+public class Factorial 
+{
+public static void main(String args[])
+{
 //Scanner object for capturing the user input
-scanner scanner = new Scanner(System.in);
-System.out.println("Enter the number:")
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter the number:");
 //Stored the entered value in variable
 int num = scanner.nextInt();
 //Called the user defined function fact
@@ -15,9 +17,10 @@ static int fact(int n)
 {
 int output;
 if(n==1){
-return 1
+return 1;
 }
 //Recursion: Function calling itself!!
 output = fact(n-1)* n;
 return output;
+}
 }
